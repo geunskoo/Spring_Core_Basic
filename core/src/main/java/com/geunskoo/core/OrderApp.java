@@ -5,11 +5,12 @@ import com.geunskoo.core.domain.Member;
 import com.geunskoo.core.domain.MemberService;
 import com.geunskoo.core.order.Order;
 import com.geunskoo.core.order.OrderService;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class OrderApp {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
         MemberService memberService = ac.getBean("memberService", MemberService.class);
         OrderService orderService = ac.getBean("orderService", OrderService.class);
 
