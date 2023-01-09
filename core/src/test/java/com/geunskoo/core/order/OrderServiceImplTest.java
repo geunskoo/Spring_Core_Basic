@@ -1,5 +1,6 @@
 package com.geunskoo.core.order;
 
+import com.geunskoo.core.AppConfig;
 import com.geunskoo.core.domain.Grade;
 import com.geunskoo.core.domain.Member;
 import com.geunskoo.core.domain.MemberService;
@@ -10,12 +11,12 @@ import org.junit.jupiter.api.Test;
 
 class OrderServiceImplTest {
 
-    MemberService memberService = new MemberServiceImpl();
-    OrderService orderService = new OrderServiceImpl();
-
     @Test
     @DisplayName("주문 생성")
     void 주문생성(){
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+        OrderService orderService = appConfig.orderService();
         Member memberA = new Member(1L, "userA", Grade.VIP);
         Member memberB = new Member(2L, "userA", Grade.BASIC);
 
