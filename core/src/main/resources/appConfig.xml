@@ -3,19 +3,17 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="memberService" class="geunskoo.core.member.MemberSerivceImpl">
+    <bean id="memberService" class="com.geunskoo.core.member.MemberServiceImpl">
         <constructor-arg name="memberRepository" ref="memberRepository"/>
     </bean>
 
-    <bean id="memberRepository" class="geunskoo.core.member.MemoryMemberRepository">
-        <constructor-arg name="memberRepository" ref="memberRepository"/>
-    </bean>
+    <bean id="memberRepository" class="com.geunskoo.core.member.MemoryMemberRepository"/>
 
-    <bean id="orderService" class="geunskoo.core.order.OrderServiceImpl">
+    <bean id="orderService" class="com.geunskoo.core.order.OrderServiceImpl">
         <constructor-arg name="memberRepository" ref="memberRepository"/>
         <constructor-arg name="discountPolicy" ref="discountPolicy"/>
     </bean>
 
-    <bean id="discountPolicy" class="geunskoo.core.discount.RateDiscountPolicy"/>
+    <bean id="discountPolicy" class="com.geunskoo.core.discount.RateDiscountPolicy"/>
 
 </beans>
