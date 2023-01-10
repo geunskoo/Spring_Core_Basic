@@ -27,4 +27,18 @@ public class ConfigurationSingletonTest {
 
         assertThat(memberService.getMemberRepository()).isSameAs(memberService.getMemberRepository());
     }
+
+    @Test
+    @DisplayName("Configuration과 바이트코드 조작")
+    void configurationDeep() {
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+
+        AppConfig bean = ac.getBean(AppConfig.class);
+        System.out.println("bean = " + bean.getClass());
+
+        // 출력
+        // bean = class com.geunskoo.core.AppConfig$$EnhancerBySpringCGLIB$$cd6b0cd6
+        //@Configuration => CGLIB기술을 이용하여 싱글톤을 보장해주고 있음.
+    }
+
 }
