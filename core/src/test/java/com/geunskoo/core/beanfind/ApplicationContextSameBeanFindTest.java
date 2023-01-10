@@ -1,8 +1,7 @@
 package com.geunskoo.core.beanfind;
 
-import com.geunskoo.core.AppConfig;
-import com.geunskoo.core.domain.MemberRepository;
-import com.geunskoo.core.domain.MemoryMemberRepository;
+import com.geunskoo.core.member.MemberRepository;
+import com.geunskoo.core.member.MemoryMemberRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

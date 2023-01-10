@@ -1,7 +1,7 @@
 package com.geunskoo.core.discount;
 
-import com.geunskoo.core.domain.Grade;
-import com.geunskoo.core.domain.Member;
+import com.geunskoo.core.member.Grade;
+import com.geunskoo.core.member.Member;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

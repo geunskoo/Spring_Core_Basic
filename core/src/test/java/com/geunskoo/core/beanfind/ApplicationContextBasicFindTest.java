@@ -1,9 +1,8 @@
 package com.geunskoo.core.beanfind;
 
 import com.geunskoo.core.AppConfig;
-import com.geunskoo.core.domain.MemberService;
-import com.geunskoo.core.domain.MemberServiceImpl;
-import org.assertj.core.api.Assertions;
+import com.geunskoo.core.member.MemberService;
+import com.geunskoo.core.member.MemberServiceImpl;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;

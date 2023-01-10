@@ -1,4 +1,4 @@
-package com.geunskoo.core.domain;
+package com.geunskoo.core.member;
 
 import java.util.HashMap;
 

@@ -1,11 +1,8 @@
 package com.geunskoo.core.order;
 
 import com.geunskoo.core.discount.DiscountPolicy;
-import com.geunskoo.core.discount.FixDiscountPolicy;
-import com.geunskoo.core.domain.Member;
-import com.geunskoo.core.domain.MemberRepository;
-import com.geunskoo.core.domain.MemberService;
-import com.geunskoo.core.domain.MemoryMemberRepository;
+import com.geunskoo.core.member.Member;
+import com.geunskoo.core.member.MemberRepository;
 
 public class OrderServiceImpl implements OrderService {
     private final MemberRepository memberRepository;

@@ -1,10 +1,9 @@
 package com.geunskoo.core.order;
 
 import com.geunskoo.core.AppConfig;
-import com.geunskoo.core.domain.Grade;
-import com.geunskoo.core.domain.Member;
-import com.geunskoo.core.domain.MemberService;
-import com.geunskoo.core.domain.MemberServiceImpl;
+import com.geunskoo.core.member.Grade;
+import com.geunskoo.core.member.Member;
+import com.geunskoo.core.member.MemberService;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

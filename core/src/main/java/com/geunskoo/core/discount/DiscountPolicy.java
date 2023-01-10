@@ -1,6 +1,6 @@
 package com.geunskoo.core.discount;
 
-import com.geunskoo.core.domain.Member;
+import com.geunskoo.core.member.Member;
 
 public interface DiscountPolicy {
     /**

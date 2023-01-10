@@ -1,11 +1,9 @@
 package com.geunskoo.core;
 
-import com.geunskoo.core.domain.Grade;
-import com.geunskoo.core.domain.Member;
-import com.geunskoo.core.domain.MemberService;
+import com.geunskoo.core.member.Grade;
+import com.geunskoo.core.member.Member;
+import com.geunskoo.core.member.MemberService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.lang.annotation.Annotation;
 
 public class memberApp {
     public static void main(String[] args) {

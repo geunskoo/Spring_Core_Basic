@@ -1,4 +1,4 @@
-package com.geunskoo.core.domain;
+package com.geunskoo.core.member;
 
 import com.geunskoo.core.AppConfig;
 import org.junit.jupiter.api.DisplayName;

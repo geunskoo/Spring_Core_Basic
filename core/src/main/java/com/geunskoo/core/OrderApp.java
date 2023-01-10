@@ -1,8 +1,8 @@
 package com.geunskoo.core;
 
-import com.geunskoo.core.domain.Grade;
-import com.geunskoo.core.domain.Member;
-import com.geunskoo.core.domain.MemberService;
+import com.geunskoo.core.member.Grade;
+import com.geunskoo.core.member.Member;
+import com.geunskoo.core.member.MemberService;
 import com.geunskoo.core.order.Order;
 import com.geunskoo.core.order.OrderService;
 import org.springframework.context.ApplicationContext;
